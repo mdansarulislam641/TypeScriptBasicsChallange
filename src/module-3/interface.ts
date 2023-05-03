@@ -63,3 +63,16 @@ interface IAddNumbers {
 };
 
 const addNumberWithInterface : IAddNumbers = (num1 , num2 ) => num1 + num2
+
+// array with type and interface 
+
+// array with type 
+type NumberArray = number[];
+const numbers : NumberArray = [1, 3, 4, 5, 3];
+
+// array with interface 
+interface INumberArray {
+    [ind : number] : number
+}
+
+const numberWithInterface : INumberArray = [1,3 ,4 ,5 ,3]
