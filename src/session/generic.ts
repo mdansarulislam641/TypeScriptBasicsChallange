@@ -39,3 +39,15 @@ const friends: MyArray<myObjNew> = [
 type  newNumArray<X, Y> = [X ,Y] ;
 const A : newNumArray<number , string> = [22 , 'th'] ;
 const B : newNumArray<string ,boolean> = ['sjf', true]
+
+// Make Generic Function 
+
+const printInfo = <X,Y>(param1 : X , param2 : Y): X =>{
+    console.log(`param1 = ${param1} <---> param2 = ${param2}`);
+    return param1 ;
+};
+
+printInfo(23 ,'this')
+printInfo(true , 23);
+printInfo("name", true);
+console.log(printInfo(23, 'tumi'))
